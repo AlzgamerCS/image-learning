@@ -19,18 +19,18 @@ This is a beginner-friendly project for learning **PyTorch**, **image processing
 
 ## 🗂️ Project Structure
 
-image_learning/
-├── data/ # Input images (PNG, JPG)
-├── src/ # Source code
-│ ├── model.py # Neural network model
-│ ├── data_utils.py # Image loading and preprocessing
-│ ├── train.py # Training loop
-│ ├── test.py # Image reconstruction
-│ └── config.py # Configs and constants
-├── tests/ # Unit tests
-├── main.py # Entry point (WIP)
-├── requirements.txt # Python dependencies
-├── README.md # Project documentation
+image_learning/  
+├── data/ # Input images (PNG, JPG)  
+├── src/ # Source code  
+│ ├── model.py # Neural network model  
+│ ├── data_utils.py # Image loading and preprocessing  
+│ ├── train.py # Training loop  
+│ ├── test.py # Image reconstruction  
+│ └── config.py # Configs and constants  
+├── tests/ # Unit tests  
+├── main.py # Entry point (WIP)  
+├── requirements.txt # Python dependencies  
+├── README.md # Project documentation  
 └── .gitignore # Git ignore rules
 
 ---
@@ -83,9 +83,9 @@ pytest # inside the root directory
 
 ### TODOs
 
-data_utils.py: Add support for RGB and grayscale images ✅ Done
-model.py: Implement a simple MLP architecture ✅ Done
-train.py : Implement training loop with loss calculation
+data_utils.py: Add support for RGB and grayscale images ✅ Done  
+model.py: Implement a simple MLP architecture ✅ Done  
+train.py : Implement training loop with loss calculation  
 main.py: Create an entry point to load an image, train the model, and visualize results ✅ Done
 
 Run
@@ -98,5 +98,5 @@ to test the image loading functionality (already implemented, working). However,
 
 👥 Contributors
 
-Kuanysh Murat
+Kuanysh Murat  
 Merey Bissenbin
