@@ -46,52 +46,57 @@ cd image-learning
 
 ### 2. Set Up a Virtual Environment
 
+```bash
 python -m venv venv
 source venv/bin/activate # or venv\Scripts\activate on Windows
+```
 
 ### 3. Install Dependencies
 
+```bash
 pip install -r requirements.txt
+```
 
 ### 4. Train the Model
 
+```bash
 python src/train.py
+```
 
 ### 5. Test Image Reconstruction
 
+```bash
 python src/test.py
+```
 
 ### 🧪 Testing
 
 Run all unit tests using:
 
 ```bash
-pytest tests/
+pytest # inside the root directory
 ```
 
 ---
 
 ## 🧑‍💻 Development
 
-### Last we did
+### TODOs
 
-Initial commit with basic structure of the project
+data_utils.py: Add support for RGB and grayscale images ✅ Done
+model.py: Implement a simple MLP architecture ✅ Done
+train.py : Implement training loop with loss calculation
+main.py: Create an entry point to load an image, train the model, and visualize results ✅ Done
 
-### We're currently focusing on
-
-data_utils.py: Add support for RGB and grayscale images
-model.py: Implement a simple MLP architecture
-
-Run:
+Run
 
 ```bash
 pytest tests/test_image_loading.py
 ```
 
-to test the image loading functionality (already implemented, NOTE: the test is not actually working for now). However, no tests for the model for now.
+to test the image loading functionality (already implemented, working). However, no tests for the model for now.
 
 👥 Contributors
 
 Kuanysh Murat
-
 Merey Bissenbin

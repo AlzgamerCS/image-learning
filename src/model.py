@@ -1,5 +1,6 @@
 import torch.nn as nn
-import torch.nn.functional as F 
+import torch.nn.functional as F
+
 
 class ImageMLP(nn.Module):
     def __init__(self):
@@ -12,8 +13,7 @@ class ImageMLP(nn.Module):
         x = F.relu(self.fc1(x))
 
         x = F.relu(self.fc2(x))
-        
+
         x = self.fc3(x)
-
+        
         return x
-
