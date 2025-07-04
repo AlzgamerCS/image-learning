@@ -7,6 +7,8 @@ def load_image(path, grayscale=True):
     img = Image.open(path)
     img = img.convert("L" if grayscale else "RGB")
     img_array = np.array(img)
+    if grayscale:
+        img_array = img_array[..., np.newaxis]
     return img_array
 
 
